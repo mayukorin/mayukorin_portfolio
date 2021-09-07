@@ -270,32 +270,65 @@
 
 <div class="tt">
 
-    <p class = "pi"><img class="im" src="../picture/po.png" width=600px></p>
+     <p class = "pi"><img class="im" src="../picture/bb.png" width=600px></p>
 
-    <p class="title">自分のポートフォーリオ</p>
+     <p class="title">頻出単語調査アプリ</p>
     <table class="c">
-    <tr>
-        <th>リンク先</th>
-        <td class="le"><a href="https://folioma.herokuapp.com/WebContent/html/index.html">https://folioma.herokuapp.com/WebContent/html/index.html</a></td>
-    </tr>
-    <tr>
-        <th>使用ツール</th>
-        <td class="le">HTML/CSS</td>
-    </tr>
-    <tr>
-        <th>制作期間</th>
-        <td class="le">2020年9月</td>
-    </tr>
-    <tr>
-        <th>git hub</th>
-        <td class="le"><a href="https://github.com/mayukorin/Portfolio">https://github.com/mayukorin/Portfolio</a></td>
-    </tr>
-    <tr>
-        <th>制作理由</th>
-        <td class="le">自分のスキルや今まで作ってきた作品を紹介するために、作成しました。</td>
-    </tr>
+       <tr>
+            <th>リンク先</th>
+            <td class="le"><a href="https://com-word-app-ver-2.herokuapp.com/">https://com-word-app-ver-2.herokuapp.com/</a></td>
+       </tr>
+       <tr>
+            <th>概要</th>
+            <td class="le">2000文字以内の英文を左のフォームに入力すると，右のグラフに頻出単語上位10個まで表示される．また，棒グラフをクリックすると wikipedia のページに飛ぶ</td>
+       </tr>
+       <tr>
+            <th>使用ツール</th>
+            <td class="le">Python, Django(REST Framework), Vue.js, docker-compose, NLTK, Wikipedia API</td>
+       </tr>
+       <tr>
+            <th>制作期間</th>
+            <td class="le">2021年6月〜現在</td>
+       </tr>
+       <tr>
+            <th>git hub</th>
+            <td class="le"><a href="https://github.com/mayukorin/com_word_app_ver_2">https://github.com/mayukorin/com_word_app_ver_2</a></td>
+       </tr>
+       <tr>
+            <th>工夫した点</th>
+            <td class="le">頻出単語を表示させる時に，正規化やノイズ除去も行った点．また，頻出単語を表示させるだけではなく，その単語の wikipedia にすぐアクセスできるようにした点</td>
+       </tr>
+        <tr>
+             <th>苦労した点</th>
+             <td>単語の wikipedia のページと棒グラフをリンクさせる部分．chart.js の onClick プロパティを使って実現</td>
+       </tr>
+        <tr>
+            <th>課題</th>
+            <td class="le">wikipedia api でヒットしない単語が多いこと．原因を探りたい．</td>
+       </tr>
+       <tr>
+            <th>制作理由</th>
+            <td class="le">自分が研究室で論文を読んでいて，頻出単語（大事な単語）をすぐチェックできるアプリがあったらいいなと思ったから．</td>
+       </tr>
+       <tr>
+             <th>Python で開発した理由</th>
+             <td>頻出単語を調べるのに，正規化・ノイズ除去などが簡単にできる NLTK を使いたいと思っていて，NLTK は Python のパッケージであったから．</td>
+       </tr>
+       <tr>
+             <th>Django で開発した理由</th>
+             <td>Django は，管理画面が自動生成されるため，データの管理が簡単だから．ノイズ除去の対象にする単語を，管理画面を通して簡単に追加できる．</td>
+       </tr>
+       <tr>
+             <th>Django REST Framework で開発した理由</th>
+             <td>頻出単語の棒グラフを表示させる時にchart.js を使っていたため，Django の値を JavaScript に簡単に受け渡ししたかったから．</td>
+       </tr>
+        <tr>
+             <th> Vue で開発した理由</th>
+             <td>Vuetify を使って，手軽に綺麗な web ページを作り立ったから．</td>
+       </tr>
 
     </table>
+
 </div>
 </body>
 </html>
