@@ -88,6 +88,8 @@ table.b {
 table.c {
 
     margin:auto;
+    margin-left:10px;
+    margin-right:10px;
     border-collapse: separate;
     border-spacing: 0px 15px;
 }
