@@ -267,6 +267,73 @@
 
     </table>
 </div>
+    
+ <div class="tt">
+
+     <p class = "pi"><img class="im" src="../picture/bb.png" width=600px></p>
+
+     <p class="title">レシピ検索アプリ（開発途中）</p>
+    <table class="c">
+       <tr>
+            <th>リンク先</th>
+            <td class="le"><a href="https://com-word-app-ver-2.herokuapp.com/">https://com-word-app-ver-2.herokuapp.com/</a></td>
+       </tr>
+       <tr>
+            <th>概要</th>
+            <td class="le">食材や料理名からレシピを表示するアプリ</td>
+       </tr>
+        <tr>
+            <th>主な機能</th>
+            <td class="le">食材名からレシピ検索，画像から食材認識・検索機能，レシピ保存機能，レシピランダム表示機能</td>
+       </tr>
+       <tr>
+            <th>使用ツール</th>
+            <td class="le">Python, Django，JavaScript, 楽天レシピカテゴリ一覧 API, Cloud Vision API</td>
+       </tr>
+       <tr>
+            <th>制作期間</th>
+            <td class="le">2021年1月〜2021年3月（まだ機能が未完成のため，自分で足す予定）</td>
+       </tr>
+       <tr>
+            <th>git hub</th>
+            <td class="le"><a href="https://github.com/mayukorin/com_word_app_ver_2">https://github.com/mayukorin/com_word_app_ver_2</a></td>
+       </tr>
+       <tr>
+            <th>工夫した点</th>
+            <td class="le">PWA を実装し，スマホのホーム画面から手軽にアプリ検索ができるようにした点</td>
+       </tr>
+        <tr>
+             <th>苦労した点</th>
+             <td>食材認識機能．はじめは機械学習をさせたいと思ったが，十分なデータセットが見つからなかったため，Cloud Vision API を使用することにした．</td>
+       </tr>
+        <tr>
+            <th>これからの開発予定</th>
+            <td class="le">食材検索の際の食材の画像を探す．PWA のアイコンの写真を変える．食材名からレシピ検索機能の実装の続き（現在，野菜カテゴリなどから検索することができないため）（</td>
+       </tr>
+       <tr>
+            <th>制作理由</th>
+            <td class="le">自分が研究室で論文を読んでいて，頻出単語（大事な単語）をすぐチェックできるアプリがあったらいいなと思ったから．</td>
+       </tr>
+       <tr>
+             <th>Python で開発した理由</th>
+             <td>頻出単語を調べるのに，正規化・ノイズ除去などが簡単にできる NLTK を使いたいと思っていて，NLTK は Python のパッケージであったから．</td>
+       </tr>
+       <tr>
+             <th>Django で開発した理由</th>
+             <td>Django は，管理画面が自動生成されるため，データの管理が簡単だから．ノイズ除去の対象にする単語を，管理画面を通して簡単に追加できる．</td>
+       </tr>
+       <tr>
+             <th>Django REST Framework で開発した理由</th>
+             <td>頻出単語の棒グラフを表示させる時にchart.js を使っていたため，Django の値を JavaScript に簡単に受け渡ししたかったから．</td>
+       </tr>
+        <tr>
+             <th> Vue で開発した理由</th>
+             <td>Vuetify を使って，手軽に綺麗な web ページを作り立ったから．</td>
+       </tr>
+
+    </table>
+
+</div>
 
 <div class="tt">
 
@@ -281,6 +348,10 @@
        <tr>
             <th>概要</th>
             <td class="le">2000文字以内の英文を左のフォームに入力すると，右のグラフに頻出単語上位10個まで表示される．また，棒グラフをクリックすると wikipedia のページに飛ぶ</td>
+       </tr>
+        <tr>
+            <th>主な機能</th>
+            <td class="le">頻出単語検索機能，頻出単語の wikipedia のリンクを提示</td>
        </tr>
        <tr>
             <th>使用ツール</th>
